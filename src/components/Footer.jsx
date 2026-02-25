@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 py-10">
                 {/* Brand Info */}
                 <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">MyStore</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">RajanStore</h2>
                     <p className="text-sm leading-relaxed">
                         Shop the latest trends and products from top brands — at unbeatable
                         prices.

@@ -25,7 +25,7 @@ export default function Header() {
           to="/"
           className="text-2xl font-bold text-indigo-600 tracking-wide"
         >
-          MyStore
+          RajanStore
         </Link>
 
         {/* Search bar (Desktop only) */}
@@ -138,6 +138,7 @@ export default function Header() {
               >
                 Sign Up
               </Link>
+              
             </div>
           )}
         </nav>
