@@ -2,7 +2,9 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 
 const ProductsContext = createContext();
 
-const API_URL = "http://localhost:5000/api/products";
+import { BASE_URL } from "../utils/constants";
+
+const API_URL = `${BASE_URL}/products`;
 
 export function useProducts() {
   return useContext(ProductsContext);

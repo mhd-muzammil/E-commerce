@@ -2,7 +2,9 @@ import { io } from "socket.io-client";
 
 // Create socket connection
 // Use environment variable or default to localhost
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || "http://localhost:5000";
+import { API_BASE } from "./constants";
+
+const SOCKET_URL = API_BASE;
 
 let socket = null;
 

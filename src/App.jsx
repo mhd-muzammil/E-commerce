@@ -14,11 +14,11 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import EditProduct from "./pages/EditProduct";
 import ProtectedRoute from "./components/ProtectedRoute";
-import io from 'socket.io-client';
 import axios from "axios";
 import { BASE_URL } from "./utils/constants";
+import { getSocket } from "./utils/socket";
 
-const socket = io("http://localhost:5000");
+const socket = getSocket();
 
 function AppRoutes() {
 
