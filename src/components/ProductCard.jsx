@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/cartContext";
 import { useAuth } from "../context/authContext";
 
 const PLACEHOLDER = "https://via.placeholder.com/600x400?text=No+Image";

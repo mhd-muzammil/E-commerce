@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useProducts } from "../context/productsContext";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/cartContext";
 import { useAuth } from "../context/authContext";
 import { getSocket } from "../utils/socket";
 
