@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { useProducts } from "../context/productsContext";
 import { useCart } from "../context/cartContext";
 import { useAuth } from "../context/authContext";
+import { BASE_URL } from "../utils/constants";
 import { getSocket } from "../utils/socket";
 
 export default function ProductDetail() {
@@ -170,7 +171,7 @@ export default function ProductDetail() {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const response = await fetch(`${BASE_URL}/products/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

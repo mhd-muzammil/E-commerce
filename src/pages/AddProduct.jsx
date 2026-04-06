@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useProducts } from "../context/productsContext";
 import { useAuth } from "../context/authContext";
 
-const API_URL = "http://localhost:5000/api/products";
+import { BASE_URL } from "../utils/constants";
+const API_URL = `${BASE_URL}/products`;
 
 export default function AddProduct() {
   const navigate = useNavigate();

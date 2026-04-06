@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/cartContext";
 import { useAuth } from "../context/authContext";
+import { BASE_URL } from "../utils/constants";
 
 const PLACEHOLDER = "https://via.placeholder.com/600x400?text=No+Image";
 
@@ -53,7 +54,7 @@ export default function ProductCard({ p, onDelete }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/products/${productId}`,
+        `${BASE_URL}/products/${productId}`,
         {
           method: "DELETE",
           headers: {
